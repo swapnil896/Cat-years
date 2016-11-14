@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UITextFieldDelegate>
+{
+    UILabel *labelHead, *labelText, *labelOutput;
+    UIButton *buttonCalculate, *buttonClear;
+    UITextField *ageField;
+    CGFloat screenHeight, screenWidth;
+}
 
 @end
 
